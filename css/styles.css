@@ -10,7 +10,6 @@ body {
   background-color: #e5e5e5;
   color: #212121;
   font-family: Roboto, sans-serif;
-  letter-spacing: 0.03em;
 }
 button {
   font-family: inherit;
@@ -60,8 +59,12 @@ button {
 .site-nav .link.current {
   color: var(--accent-text-color);
 }
+/* -------------site-contacts------------------- */
 .site-contact {
-  list-style: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
 }
 .site-contact a {
   color: var(--primary-text-color);
@@ -69,14 +72,6 @@ button {
 .site-contact a:hover,
 .site-contact a:focus {
   color: var(--accent-text-color);
-}
-/* -------------site-contacts------------------- */
-.site-contact-link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: #757575;
 }
 .site-contact .link.current {
   color: var(--accent-text-color);
@@ -88,18 +83,16 @@ button {
   text-align: center;
 }
 .hero-title {
-  color: var(--primary-bg-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
   text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--primary-bg-color);
 }
 .button-primary {
-  color: var(--accent-text-color);
-  background-color: var(--primary-bg-color);
-}
-.button-primary.text {
-  font-family: inherit;
+  font-style: normal;
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
@@ -108,6 +101,24 @@ button {
   letter-spacing: 0.06em;
   color: var(--primary-bg-color);
   background-color: var(--accent-text-color);
+}
+.title {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--title-text-color);
 }
 
 /* ----------------section------------------------ */
@@ -217,6 +228,9 @@ button:focus {
 }
 .footer-title a:hover,
 .footer-title a:focus {
+  color: var(--title-text-color);
+}
+.footer-title .link.current {
   color: var(--title-text-color);
 }
 /* project */
