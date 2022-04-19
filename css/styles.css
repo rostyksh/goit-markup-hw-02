@@ -5,6 +5,37 @@
   --primary-bg-color: #ffffff;
   --black-text-color: #000000;
 }
+/* РЕСЕТ */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ul,
+ol {
+  margin: 0;
+  padding-left: 0;
+}
+/* зміна руки і курсора при наведенні*/
+button {
+  cursor: pointer;
+}
+/* Забирає проміжуток між картинками - строчний елемент */
+img {
+  display: block;
+}
+/* COMENTS */
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid red;
+}
 /* head */
 body {
   background-color: #e5e5e5;
@@ -19,12 +50,21 @@ button {
 /* заб точки */
 .list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 /* заб підкреслення а сlass */
 .link {
   text-decoration: none;
 }
 /*---------- logo------------------- */
+.page-header {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid red;
+}
 .web-color {
   color: var(--accent-text-color);
   font-size: 26px;
@@ -32,6 +72,8 @@ button {
   line-height: 0.83;
   font-family: Raleway;
   font-style: normal;
+  padding-top: 24px;
+  padding-bottom: 25px;
 }
 .studio-color {
   color: var(--black-text-color);
@@ -47,6 +89,9 @@ button {
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #2196f3;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
 }
 .site-nav a {
   color: var(--primary-text-color);
@@ -65,6 +110,9 @@ button {
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: block;
 }
 .site-contact a {
   color: var(--primary-text-color);
@@ -90,6 +138,8 @@ button {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--primary-bg-color);
+  margin-top: 0;
+  margin-bottom: 30;
 }
 .button-primary {
   font-style: normal;
@@ -101,8 +151,16 @@ button {
   letter-spacing: 0.06em;
   color: var(--primary-bg-color);
   background-color: var(--accent-text-color);
+  display: inline-block;
+
+  border-radius: 4px;
+  padding: 10px 32px;
+  min-width: 200px;
+  border: 1px solid transparent;
 }
 .title {
+  margin: 0;
+  margin-bottom: 94;
   font-family: Roboto;
   font-style: normal;
   font-weight: bold;
